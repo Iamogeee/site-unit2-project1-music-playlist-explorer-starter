@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <header>
-        <!-- Your header content here -->
+      <!-- Your header content here -->
+      <h2>Music Playlist Explorer</h2>
+      <a href="./featured.html">Featured page</a>
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <main class="playlist-cards">
+      <!-- Your main content here -->
+      <section class="playlist-card"></section>
     </main>
 
+    <!-- Modal Structure -->
+    <div class="modal" hidden>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header-items">
+          <div class="modal-header">
+            <img
+              src="assets/img/song.png"
+              alt="Playlist Image"
+              class="playlist-image"
+            />
+            <button class="shuffle-button">Shuffle</button>
+          </div>
+          <div class="header-text">
+            <h1>Playlist Title</h1>
+            <p>Creator Name</p>
+          </div>
+        </div>
+
+        <div class="song">
+          <img
+            src="assets/img/playlist.png"
+            alt="Song Image"
+            class="song-image"
+          />
+          <!-- <button class="shuffle-button">Shuffle</button> -->
+          <div class="song-details">
+            <p>Song Title</p>
+            <p>Artist Name</p>
+            <p>Album Name</p>
+          </div>
+          <div class="song-duration">
+            <p>0:00</p>
+          </div>
+        </div>
+
+        <div class="song">
+          <img
+            src="assets/img/playlist.png"
+            alt="Song Image"
+            class="song-image"
+          />
+          <div class="song-details">
+            <p>Song Title</p>
+            <p>Artist Name</p>
+            <p>Album Name</p>
+          </div>
+          <div class="song-duration">
+            <p>0:00</p>
+          </div>
+        </div>
+
+        <div class="song">
+          <img
+            src="assets/img/playlist.png"
+            alt="Song Image"
+            class="song-image"
+          />
+          <div class="song-details">
+            <p>Song Title</p>
+            <p>Artist Name</p>
+            <p>Album Name</p>
+          </div>
+          <div class="song-duration">
+            <p>0:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
-        <!-- Your footer content here -->
+      <p>Copyright © 2024 by Oge. All rights reserved.</p>
+      <p>
+        Contact us: <a href="mailto:info@yourcompany.com">ogenna@meta.com</a>
+      </p>
     </footer>
+
     <script src="data/data.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -3,4 +3,203 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    background-image: url("assets/img/Untitled design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: #FF0000; /* Red color for links */
+}
+
+/* CSS for Modal */
+.modal {
+    /* display: block; */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    transition: opacity 0.3s ease;
+
+ }
+
+.modal-header-items {
+    display: flex;
+}
+
+ .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust based on preference */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Adds a shadow */
+    animation: modalOpen 0.4s ease-out; /* Animation for modal opening */
+}
+
+.modal-header img.playlist-image {
+    width: 150px; /* Increase the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.modal-header .shuffle-button {
+    font-size: 20px; /* Increase the font size of the button text */
+    padding: 10px 20px; /* Increase the padding for a larger button */
+    width: 150px;
+}
+
+ .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+ .close:hover,
+ .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20%;
+    padding: 10px;
+}
+
+ .song {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.song-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.song-duration {
+    margin-left: auto;
+}
+.playlist-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping of cards if screen is small */
+    /* gap: 20px;  */
+    padding: 20px;
+    
+}
+
+.playlist-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 20px;
+    padding: 20px;
+    /* display: flex; */
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping of cards if screen is small */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.playlist{
+    background-color: #f2f2f2; /* Light grey background for each div */
+    padding: 10px; /* Padding inside each div */
+    border-radius: 8px; /* Rounded corners for each div */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for each div */
+     /* Makes it easier to align items within the div */
+    align-items: center; /* Vertically centers the content within the div */
+    justify-content: space-between; 
+    
+    
+}
+
+.playlist-card div:hover {
+    background-color: #e8e8e8; /* Lighter grey background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    
+}
+
+img{
+    width: 100%;
+}
+
+footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #6a0dad; /*Purple background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    
+    
+}
+
+.playlist-image {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image is a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+.likes {
+    display: flex;
+    align-items: center; /* Aligns the items vertically in the center */
+    justify-content: flex-start; /* Aligns content to the start */
+}
+/* Style for the like button */
+.like-button {
+    background: none;
+    border: none;
+    color: red; /* Red heart, change color as needed */
+    font-size: 16px; /* Adjust size as needed */
+    cursor: pointer;
+    padding-left: 5px; /* Space between the number and the button */
+}
+
+.like-button:focus {
+    outline: none;
+}
+
+.like-button:hover {
+    color: darkred; /* Darker red when hovered */
+}
+
+.shuffle-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.shuffle-button:hover {
+    background-color: #45a049; /* Darker green background on hover */
 }
